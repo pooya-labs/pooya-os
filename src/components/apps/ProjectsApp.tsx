@@ -39,8 +39,8 @@ const PROJECTS_DATA = [
       fa: "ترمینال در مرورگر اجرا می‌شود؛ این نسخه به Shell یا API سمت سرور متصل نیست.",
       en: "The terminal is browser-local; this static deployment has no server shell or API runtime.",
     },
-    live: "https://pooya16pg-spec.github.io/pooya-os/",
-    source: "https://github.com/pooya16pg-spec/pooya-os",
+    live: "https://pooya-labs.github.io/pooya-os/",
+    source: "https://github.com/pooya-labs/pooya-os",
     accent: "from-cyan-400/20 via-blue-500/10 to-violet-500/20",
   },
   {
@@ -69,8 +69,8 @@ const PROJECTS_DATA = [
       fa: "هیچ سفارش بورسی ارسال نمی‌شود؛ دفتر سفارش، سابقهٔ اولیه و شاخص‌های AI نمایشی هستند.",
       en: "No exchange orders are sent; the order book, seeded history, and AI-style indicators are illustrative.",
     },
-    live: "https://pooya16pg-spec.github.io/aurapulse/",
-    source: "https://github.com/pooya16pg-spec/aurapulse",
+    live: "https://pooya-labs.github.io/aurapulse/",
+    source: "https://github.com/pooya-labs/aurapulse",
     accent: "from-emerald-400/20 via-cyan-500/10 to-teal-500/20",
   },
   {
@@ -99,8 +99,8 @@ const PROJECTS_DATA = [
       fa: "اعداد CPU و Throughput ورودی‌های نمونه‌اند؛ همگام‌سازی فقط بین تب‌های همان مرورگر انجام می‌شود.",
       en: "CPU and throughput values are illustrative inputs; synchronization is limited to tabs in the same browser.",
     },
-    live: "https://pooya16pg-spec.github.io/nexus-canvas/",
-    source: "https://github.com/pooya16pg-spec/nexus-canvas",
+    live: "https://pooya-labs.github.io/nexus-canvas/",
+    source: "https://github.com/pooya-labs/nexus-canvas",
     accent: "from-sky-400/20 via-indigo-500/10 to-emerald-500/20",
   },
   {
@@ -129,8 +129,8 @@ const PROJECTS_DATA = [
       fa: "ورودی صوتی در خود مرورگر پردازش می‌شود؛ بخش اپتیک مولد تصویر هوش مصنوعی نیست.",
       en: "Audio is processed in the browser; the optical studio is not an AI image-generation service.",
     },
-    live: "https://pooya16pg-spec.github.io/lumina-glass/",
-    source: "https://github.com/pooya16pg-spec/lumina-glass",
+    live: "https://pooya-labs.github.io/lumina-glass/",
+    source: "https://github.com/pooya-labs/lumina-glass",
     accent: "from-fuchsia-400/20 via-indigo-500/10 to-cyan-400/20",
   },
 ];
