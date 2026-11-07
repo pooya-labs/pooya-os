@@ -1,7 +1,8 @@
 # Pooya.OS — Interactive Web Desktop & Engineering Portfolio
 
 **Author:** Pooya Goodarzi  
-**Live site:** https://pooya16pg-spec.github.io/pooya-os/
+**Live site:** https://pooya-labs.github.io/pooya-os/  
+**Repository:** [pooya-labs/pooya-os](https://github.com/pooya-labs/pooya-os)
 
 Pooya.OS is a browser-based engineering portfolio presented as a desktop workspace. It brings project case studies, a local command sandbox, a design-token inspector, and a small window manager into one responsive interface.
 
