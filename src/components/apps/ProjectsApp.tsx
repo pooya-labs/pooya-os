@@ -14,8 +14,39 @@ import {
 
 const PROJECTS_DATA = [
   {
-    id: "pooya-os",
+    id: "pooya-labs-platform",
     index: "01",
+    badge: "PERSONAL ENGINEERING PLATFORM",
+    title: { fa: "Pooya Labs Platform", en: "Pooya Labs Platform" },
+    subtitle: {
+      fa: "خانهٔ اصلی برند شخصی و مجموعه محصولات مهندسی",
+      en: "The home of my engineering identity and selected products",
+    },
+    challenge: {
+      fa: "چطور می‌توان هویت حرفه‌ای، پروژه‌ها، مستندات فنی و نوشته‌ها را در یک تجربهٔ منسجم و قابل توسعه گرد هم آورد؟",
+      en: "How can a personal engineering identity, projects, technical case studies, and writing live in one coherent, extensible experience?",
+    },
+    approach: {
+      fa: "طراحی و توسعهٔ یک پورتفولیوی دوزبانه با صفحات کیس‌استادی مستقل، کتابخانهٔ رمان‌ها، نمودارهای معماری و انتشار استاتیک.",
+      en: "A bilingual portfolio with shareable case studies, a novels library, architecture diagrams, and a static publishing pipeline.",
+    },
+    proof: {
+      fa: "زبان سایت را تغییر بده، کیس‌استادی پروژه‌ها را باز کن و بخش‌های معرفی، سیستم‌ها و کتابخانهٔ نوشته‌ها را بررسی کن.",
+      en: "Switch languages, open the project case studies, and explore the profile, systems, and writing library.",
+    },
+    stack: "React • TypeScript • Vite • GitHub Actions • GitHub Pages",
+    boundary: {
+      fa: "این وب‌سایت پورتفولیوی عمومی است؛ فضای خصوصی مالک و قابلیت‌های سروری مستقل از نسخهٔ استاتیک هستند.",
+      en: "This is the public portfolio; the private owner workspace and server-side capabilities are separate from the static site.",
+    },
+    live: "https://pooya-labs.github.io/pooya-labs-platform/",
+    source: "https://github.com/pooya-labs/pooya-labs-platform",
+    logo: "https://pooya-labs.github.io/pooya-labs-platform/brand/pooya-monogram.webp",
+    accent: "from-emerald-400/20 via-teal-500/10 to-cyan-400/20",
+  },
+  {
+    id: "pooya-os",
+    index: "02",
     badge: "INTERACTIVE WEB DESKTOP",
     title: { fa: "Pooya.OS", en: "Pooya.OS" },
     subtitle: {
@@ -45,7 +76,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "aurapulse",
-    index: "02",
+    index: "03",
     badge: "MARKET DATA & PAPER TRADING",
     title: { fa: "AuraPulse", en: "AuraPulse" },
     subtitle: {
@@ -75,7 +106,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "nexuscanvas",
-    index: "03",
+    index: "04",
     badge: "SYSTEM ARCHITECTURE STUDIO",
     title: { fa: "NexusCanvas", en: "NexusCanvas" },
     subtitle: {
@@ -105,7 +136,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "lumina-glass",
-    index: "04",
+    index: "05",
     badge: "OPTICAL & AUDIO LAB",
     title: { fa: "LuminaGlass", en: "LuminaGlass" },
     subtitle: {
@@ -133,13 +164,133 @@ const PROJECTS_DATA = [
     source: "https://github.com/pooya-labs/lumina-glass",
     accent: "from-fuchsia-400/20 via-indigo-500/10 to-cyan-400/20",
   },
+  {
+    id: "orbit",
+    index: "06",
+    badge: "OBSERVABILITY & INCIDENT OPERATIONS",
+    title: { fa: "ORBIT", en: "ORBIT" },
+    subtitle: {
+      fa: "محیطی برای مشاهده‌پذیری، رخدادها و عملیات سرویس",
+      en: "An operations workspace for observability and incident response",
+    },
+    challenge: {
+      fa: "چطور وضعیت سرویس‌ها، رخدادها و سیگنال‌های عملیاتی را در یک نمای قابل فهم کنار هم قرار دهیم؟",
+      en: "How can service health, incidents, and operational signals be brought together in one understandable workspace?",
+    },
+    approach: {
+      fa: "داشبورد ماژولار با بخش‌های رخداد، هشدار، استقرار، SLO، ممیزی، متریک، لاگ و تریس؛ همراه با مسیر نمایشی داده.",
+      en: "A modular dashboard for incidents, alerts, deployments, SLOs, audit, metrics, logs, and traces, with a separate synthetic-data demo path.",
+    },
+    proof: {
+      fa: "بخش‌های مختلف داشبورد را مرور کن و تفاوت دادهٔ نمایشی با زیرساخت عملیاتی مستقل را ببین.",
+      en: "Explore the dashboard modules and inspect the boundary between the synthetic demo and the independent engineering stack.",
+    },
+    stack: "Go • PostgreSQL • OpenTelemetry • Prometheus • Loki • Tempo • Apps Script",
+    boundary: {
+      fa: "نسخهٔ عمومی شامل دادهٔ مصنوعی است؛ سرویس Go و زیرساخت مشاهده‌پذیری به‌صورت سرویس عمومی میزبانی نشده‌اند.",
+      en: "The public demo uses synthetic data; the Go service and observability stack are not hosted as public production services.",
+    },
+    live: "https://pooya-labs.github.io/orbit/",
+    source: "https://github.com/pooya-labs/orbit",
+    accent: "from-cyan-400/20 via-indigo-500/10 to-violet-500/20",
+  },
+  {
+    id: "aetherflow",
+    index: "07",
+    badge: "DISTRIBUTED SYSTEMS & CONTROL PLANE",
+    title: { fa: "AetherFlow", en: "AetherFlow" },
+    subtitle: {
+      fa: "پروژه‌ای برای معماری سامانه‌های توزیع‌شده و کنترل‌پلین",
+      en: "A distributed-systems and control-plane engineering project",
+    },
+    challenge: {
+      fa: "چطور پردازش، هماهنگی و مشاهده‌پذیری اجزای یک سامانهٔ توزیع‌شده را با مرزهای روشن طراحی کنیم؟",
+      en: "How can processing, coordination, and observability be designed across a distributed system with clear boundaries?",
+    },
+    approach: {
+      fa: "معماری مبتنی بر Rust، PostgreSQL و JetStream در کنار اجزای Worker و داشبورد عملیاتی.",
+      en: "A Rust, PostgreSQL, and JetStream-oriented architecture alongside Worker components and an operations dashboard.",
+    },
+    proof: {
+      fa: "مستندات و داشبورد عمومی را بررسی کن؛ وضعیت نمایش‌داده‌شدهٔ M07 هنوز با گزارش پیشرفت M08 کاملاً همگام نیست.",
+      en: "Review the documentation and public dashboard; the visible M07 milestone has not yet been reconciled with the README's M08 progress.",
+    },
+    stack: "Rust • PostgreSQL • NATS JetStream • Cloudflare Workers",
+    boundary: {
+      fa: "اتصال زندهٔ API از مرورگر عمومی تأیید نشده و وضعیت نسخهٔ نمایشی نباید معادل استقرار عملیاتی تلقی شود.",
+      en: "A live public browser-to-API connection has not been verified; the demo must not be presented as a production deployment.",
+    },
+    live: "https://pooya-labs.github.io/aetherflow/",
+    source: "https://github.com/pooya-labs/aetherflow",
+    accent: "from-violet-400/20 via-fuchsia-500/10 to-cyan-400/20",
+  },
+  {
+    id: "globalcart",
+    index: "08",
+    badge: "BILINGUAL COMMERCE EXPERIENCE",
+    title: { fa: "GlobalCart", en: "GlobalCart" },
+    subtitle: {
+      fa: "فروشگاه نمایشی با کاتالوگ بزرگ و تجربهٔ خرید دوزبانه",
+      en: "A bilingual storefront with a large product catalog",
+    },
+    challenge: {
+      fa: "چطور تجربهٔ کشف و بررسی محصول را با گالری تصاویر و مسیر خرید منسجم در یک فروشگاه واکنش‌گرا ارائه کنیم؟",
+      en: "How can product discovery, image galleries, and a coherent shopping flow work together in a responsive storefront?",
+    },
+    approach: {
+      fa: "کاتالوگ محلی هزار محصولی، گالری‌های WebP، مسیر جست‌وجوی کاتالوگ و سبد خرید نمایشی.",
+      en: "A local 1,000-product catalog, WebP galleries, catalog discovery, and a simulated cart experience.",
+    },
+    proof: {
+      fa: "محصولات و گالری تصاویر را مرور کن، فیلترها را امتحان کن و مسیر سبد خرید را بررسی کن.",
+      en: "Browse products and image galleries, try the filters, and explore the cart flow.",
+    },
+    stack: "Next.js • TypeScript • Cloudflare Workers • Go • PostgreSQL",
+    boundary: {
+      fa: "نسخهٔ فعلی 0.2.3-dev است؛ پرداخت، موجودی، ارسال و سفارش واقعی انجام نمی‌شود.",
+      en: "The current line is 0.2.3-dev; payments, inventory reservation, shipping, and real order fulfillment are not enabled.",
+    },
+    live: "https://pooya-labs.github.io/globalcart/",
+    source: "https://github.com/pooya-labs/globalcart",
+    accent: "from-emerald-400/20 via-lime-500/10 to-teal-500/20",
+  },
+  {
+    id: "salon-booking",
+    index: "09",
+    badge: "APPOINTMENT MANAGEMENT",
+    title: { fa: "Salon Booking", en: "Salon Booking" },
+    subtitle: {
+      fa: "سامانهٔ رزرو نوبت و مدیریت برنامهٔ سالن",
+      en: "Appointment booking and salon scheduling",
+    },
+    challenge: {
+      fa: "چطور رزرو نوبت و مدیریت برنامهٔ روزانه را بدون نیاز به سرور اختصاصی در دسترس قرار دهیم؟",
+      en: "How can appointment booking and daily schedule management work without requiring a dedicated server?",
+    },
+    approach: {
+      fa: "رابط React و TypeScript با پل ارتباطی Google Apps Script و ذخیره‌سازی Google Sheets، به‌همراه اعلان مدیر.",
+      en: "A React and TypeScript interface backed by a Google Apps Script bridge and Google Sheets, with manager notifications.",
+    },
+    proof: {
+      fa: "صفحهٔ رزرو مشتری و پنل مدیریت را بررسی کن؛ نسخهٔ ۱.۰.۰ منتشر شده است.",
+      en: "Explore the customer booking flow and management panel; version 1.0.0 has been released.",
+    },
+    stack: "React • TypeScript • Vite • Google Apps Script • Google Sheets • FCM",
+    boundary: {
+      fa: "مسیر فعال از Apps Script و Sheets استفاده می‌کند؛ Cloudflare Worker و D1 فقط اسناد بازیابی قدیمی هستند.",
+      en: "The active runtime uses Apps Script and Sheets; Cloudflare Worker and D1 are retained only as legacy recovery material.",
+    },
+    live: "https://pooya-labs.github.io/salon-booking/",
+    source: "https://github.com/pooya-labs/salon-booking",
+    accent: "from-amber-400/20 via-orange-500/10 to-rose-500/20",
+  },
 ];
 
 const COPY = {
   fa: {
     eyebrow: "SELECTED WORK • 2026",
-    heading: "چهار محصول، چهار مسئلهٔ مهندسی",
-    intro: "به‌جای فهرست‌کردن ابزارها، هر پروژه یک مسئله، یک تصمیم معماری و یک مسیر آزمایش‌پذیر را نشان می‌دهد.",
+    heading: "مجموعه‌ای از محصولات و مسئله‌های مهندسی",
+    intro: "از پلتفرم شخصی تا ابزارهای مهندسی و محصولات کاربردی؛ هر پروژه مسئله، تصمیم‌های فنی و مرز قابلیت‌های خودش را شفاف نشان می‌دهد.",
     challenge: "مسئله",
     approach: "رویکرد مهندسی",
     proof: "چه چیزی را امتحان کنی؟",
@@ -153,8 +304,8 @@ const COPY = {
   },
   en: {
     eyebrow: "SELECTED WORK • 2026",
-    heading: "Four products. Four engineering problems.",
-    intro: "Each project tells a story through a concrete problem, an architectural decision, and something you can actually try.",
+    heading: "A portfolio of products and engineering work.",
+    intro: "From a personal engineering platform to practical tools and products, each project explains its problem, technical decisions, and real capability boundaries.",
     challenge: "The challenge",
     approach: "Engineering approach",
     proof: "Try this",
@@ -170,7 +321,7 @@ const COPY = {
 
 export default function ProjectsApp() {
   const { lang } = useOSStore();
-  const [selectedId, setSelectedId] = useState<string>("pooya-os");
+  const [selectedId, setSelectedId] = useState<string>("pooya-labs-platform");
   const activeProject = PROJECTS_DATA.find((project) => project.id === selectedId) || PROJECTS_DATA[0];
   const copy = COPY[lang];
 
@@ -182,7 +333,7 @@ export default function ProjectsApp() {
         <p className="max-w-3xl text-xs md:text-sm text-slate-400 leading-relaxed">{copy.intro}</p>
       </section>
 
-      <div className="grid grid-cols-2 xl:grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-2">
         {PROJECTS_DATA.map((project) => {
           const active = project.id === selectedId;
           return (
@@ -205,6 +356,20 @@ export default function ProjectsApp() {
         <div className="relative space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 border-b border-white/10 pb-4">
             <div className="min-w-0">
+              {activeProject.id === "pooya-labs-platform" && (
+                <div className="mb-3 flex items-center gap-3">
+                  <img
+                    src="https://pooya-labs.github.io/pooya-labs-platform/brand/pooya-monogram.webp"
+                    alt="Pooya Labs monogram"
+                    width={44}
+                    height={44}
+                    className="h-11 w-11 rounded-xl border border-emerald-300/25 bg-slate-950/70 object-contain p-1.5"
+                  />
+                  <span className="text-[11px] font-semibold text-emerald-200">
+                    {lang === "fa" ? "مالک و سازندهٔ پلتفرم" : "Platform owner & creator"}
+                  </span>
+                </div>
+              )}
               <span className="font-mono text-[10px] tracking-wider text-cyan-300">{activeProject.index} / {activeProject.badge}</span>
               <h3 className="mt-1 text-2xl md:text-3xl font-black text-white">{activeProject.title[lang]}</h3>
               <p className="mt-1 text-sm text-slate-300">{activeProject.subtitle[lang]}</p>
