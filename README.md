@@ -47,6 +47,16 @@ The Projects workspace uses the official project marks from the same asset sourc
 | GlobalCart | `pooya-labs/globalcart/app/icon.svg` |
 | Salon Booking | `pooya-labs/salon-booking/public/images/shayan-emblem.webp` |
 
+## Latest project update — 8 November 2026
+
+The project directory now uses the official marks for all nine showcased projects, with consistent sizing and contrast. The logo-source documentation and the 8 November changelog were updated, and the recent logo/build validation issue was corrected in the latest source changes. The static GitHub Pages deployment remains subject to its own CI verification; this note does not claim a new deployment.
+
+## Project ownership
+
+<p align="center"><a href="https://pooya-labs.github.io/pooya-labs-platform/"><img src="https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-monogram.webp" alt="Pooya Labs Platform monogram" width="64" /></a></p>
+
+**Owned and maintained by [Pooya Labs Platform](https://pooya-labs.github.io/pooya-labs-platform/).** Project direction and engineering: **Pooya Goodarzi**.
+
 ## نسخهٔ فارسی
 
 ### معرفی
@@ -70,3 +80,13 @@ npm run build
 ```
 
 برای انتشار، خروجی استاتیک و مسیر پایهٔ `/pooya-os` باید با تنظیمات GitHub Pages سازگار بمانند.
+
+### آخرین تغییرات — ۸ نوامبر ۲۰۲۶
+
+نشان رسمی هر ۹ پروژهٔ نمایش‌داده‌شده در محیط Projects همگام‌سازی شده است. اندازه و کنتراست نشان‌ها یکدست شده و مستندات منبع لوگوها و گزارش تغییرات نیز به‌روزرسانی شده‌اند. ایراد اخیر اعتبارسنجی ساخت مرتبط با لوگو اصلاح شده است؛ این مورد به‌تنهایی به معنی تأیید انتشار جدید GitHub Pages نیست.
+
+### مالکیت و نگه‌داری
+
+<p align="center"><a href="https://pooya-labs.github.io/pooya-labs-platform/"><img src="https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-monogram.webp" alt="نشان مونوگرام پویا لبز" width="64" /></a></p>
+
+**مالک و نگه‌دارنده: [پلتفرم پویا لبز](https://pooya-labs.github.io/pooya-labs-platform/)** · طراحی و توسعه: **پویا گودرزی**.
