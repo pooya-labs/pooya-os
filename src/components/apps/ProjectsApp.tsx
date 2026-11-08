@@ -15,6 +15,7 @@ import {
 const PROJECTS_DATA = [
   {
     id: "pooya-labs-platform",
+    logo: "https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-monogram.webp",
     index: "01",
     badge: "PERSONAL ENGINEERING PLATFORM",
     title: { fa: "Pooya Labs Platform", en: "Pooya Labs Platform" },
@@ -46,6 +47,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "pooya-os",
+    logo: "https://raw.githubusercontent.com/pooya-labs/pooya-os/main/public/brand/pooya-os.svg",
     index: "02",
     badge: "INTERACTIVE WEB DESKTOP",
     title: { fa: "Pooya.OS", en: "Pooya.OS" },
@@ -76,6 +78,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "aurapulse",
+    logo: "https://raw.githubusercontent.com/pooya-labs/aurapulse/main/public/aurapulse-mark.svg",
     index: "03",
     badge: "MARKET DATA & PAPER TRADING",
     title: { fa: "AuraPulse", en: "AuraPulse" },
@@ -106,6 +109,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "nexuscanvas",
+    logo: "https://raw.githubusercontent.com/pooya-labs/nexus-canvas/main/public/nexus-canvas-mark.svg",
     index: "04",
     badge: "SYSTEM ARCHITECTURE STUDIO",
     title: { fa: "NexusCanvas", en: "NexusCanvas" },
@@ -136,6 +140,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "lumina-glass",
+    logo: "https://raw.githubusercontent.com/pooya-labs/lumina-glass/main/public/lumina-mark.svg",
     index: "05",
     badge: "OPTICAL & AUDIO LAB",
     title: { fa: "LuminaGlass", en: "LuminaGlass" },
@@ -166,6 +171,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "orbit",
+    logo: "https://raw.githubusercontent.com/pooya-labs/orbit/main/app/icon.svg",
     index: "06",
     badge: "OBSERVABILITY & INCIDENT OPERATIONS",
     title: { fa: "ORBIT", en: "ORBIT" },
@@ -196,6 +202,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "aetherflow",
+    logo: "https://raw.githubusercontent.com/pooya-labs/aetherflow/main/public/favicon.svg",
     index: "07",
     badge: "DISTRIBUTED SYSTEMS & CONTROL PLANE",
     title: { fa: "AetherFlow", en: "AetherFlow" },
@@ -226,6 +233,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "globalcart",
+    logo: "https://raw.githubusercontent.com/pooya-labs/globalcart/main/app/icon.svg",
     index: "08",
     badge: "BILINGUAL COMMERCE EXPERIENCE",
     title: { fa: "GlobalCart", en: "GlobalCart" },
@@ -256,6 +264,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "salon-booking",
+    logo: "https://raw.githubusercontent.com/pooya-labs/salon-booking/main/public/images/shayan-emblem.webp",
     index: "09",
     badge: "APPOINTMENT MANAGEMENT",
     title: { fa: "Salon Booking", en: "Salon Booking" },
@@ -345,19 +354,13 @@ export default function ProjectsApp() {
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="font-mono text-[10px] text-cyan-300">{project.index}</span>
-                {project.id === "pooya-labs-platform" && (
-                  <img
-                    src="https://pooya-labs.github.io/pooya-labs-platform/brand/pooya-monogram.webp"
-                    alt=""
-                    width={24}
-                    height={24}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-6 w-6 rounded-md object-contain"
-                  />
-                )}
               </div>
-              <span className="mt-1 block text-xs font-bold text-white">{project.title[lang]}</span>
+              <div className="mt-2 flex min-w-0 items-center gap-2.5">
+                <span className={`flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl ${project.id === "pooya-labs-platform" ? "border border-white/15 bg-black p-1.5" : ["aurapulse", "nexuscanvas", "globalcart", "aetherflow", "orbit", "salon-booking"].includes(project.id) ? "bg-transparent" : "border border-white/10 bg-white p-1.5"}`}>
+                  <img src={project.logo} alt={`${project.title.en} logo`} width={40} height={40} loading="lazy" decoding="async" className="h-full w-full object-contain" />
+                </span>
+                <span className="min-w-0 text-xs font-bold text-white">{project.title[lang]}</span>
+              </div>
               <span className="mt-1 block text-[10px] text-slate-500 truncate">{project.badge}</span>
             </button>
           );
@@ -369,20 +372,16 @@ export default function ProjectsApp() {
         <div className="relative space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 border-b border-white/10 pb-4">
             <div className="min-w-0">
-              {activeProject.id === "pooya-labs-platform" && (
-                <div className="mb-3 flex items-center gap-3">
-                  <img
-                    src="https://pooya-labs.github.io/pooya-labs-platform/brand/pooya-monogram.webp"
-                    alt="Pooya Labs monogram"
-                    width={44}
-                    height={44}
-                    className="h-11 w-11 rounded-xl border border-emerald-300/25 bg-slate-950/70 object-contain p-1.5"
-                  />
+              <div className="mb-3 flex flex-wrap items-center gap-3">
+                <span className={`flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl ${activeProject.id === "pooya-labs-platform" ? "border border-white/15 bg-black p-2" : ["aurapulse", "nexuscanvas", "globalcart", "aetherflow", "orbit", "salon-booking"].includes(activeProject.id) ? "bg-transparent" : "border border-white/10 bg-white p-2"}`}>
+                  <img src={activeProject.logo} alt={`${activeProject.title.en} logo`} width={48} height={48} loading="lazy" decoding="async" className="h-full w-full object-contain" />
+                </span>
+                {activeProject.id === "pooya-labs-platform" && (
                   <span className="text-[11px] font-semibold text-emerald-200">
                     {lang === "fa" ? "مالک و سازندهٔ پلتفرم" : "Platform owner & creator"}
                   </span>
-                </div>
-              )}
+                )}
+              </div>
               <span className="font-mono text-[10px] tracking-wider text-cyan-300">{activeProject.index} / {activeProject.badge}</span>
               <h3 className="mt-1 text-2xl md:text-3xl font-black text-white">{activeProject.title[lang]}</h3>
               <p className="mt-1 text-sm text-slate-300">{activeProject.subtitle[lang]}</p>
