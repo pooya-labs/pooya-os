@@ -42,7 +42,6 @@ const PROJECTS_DATA = [
     },
     live: "https://pooya-labs.github.io/pooya-labs-platform/",
     source: "https://github.com/pooya-labs/pooya-labs-platform",
-    logo: "https://pooya-labs.github.io/pooya-labs-platform/brand/pooya-monogram.webp",
     accent: "from-emerald-400/20 via-teal-500/10 to-cyan-400/20",
   },
   {
