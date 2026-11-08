@@ -9,6 +9,7 @@ import AboutBentoApp from "@/components/apps/AboutBentoApp";
 import ProjectsApp from "@/components/apps/ProjectsApp";
 import TerminalApp from "@/components/apps/TerminalApp";
 import ArchitectureApp from "@/components/apps/ArchitectureApp";
+import { Github, ArrowUpRight } from "lucide-react";
 
 export default function PooyaOSDesktop() {
   const { isXRayMode, lang, openWindow } = useOSStore();
@@ -93,6 +94,56 @@ export default function PooyaOSDesktop() {
       <WindowFrame id="architecture">
         <ArchitectureApp />
       </WindowFrame>
+
+      {/* Brand footer */}
+      <footer
+        dir={lang === "fa" ? "rtl" : "ltr"}
+        className="fixed inset-x-3 bottom-[calc(5.15rem+env(safe-area-inset-bottom))] z-40 flex justify-center pointer-events-none"
+        aria-label={lang === "fa" ? "پیوندهای برند" : "Brand links"}
+      >
+        <div className="pointer-events-auto flex max-w-full items-center gap-2 sm:gap-3 rounded-2xl border border-white/10 bg-slate-950/65 px-3 py-2 shadow-[0_12px_40px_rgba(0,0,0,.35)] backdrop-blur-2xl">
+          <div className="flex shrink-0 items-center gap-2 border-e border-white/10 pe-3">
+            <img
+              src="/pooya-os/brand/pooya-os.svg"
+              alt="Pooya.OS"
+              width={34}
+              height={34}
+              className="h-8 w-8 object-contain"
+            />
+            <span className="hidden text-xs font-semibold tracking-tight text-slate-100 sm:inline">Pooya.OS</span>
+          </div>
+          <a
+            href="https://github.com/pooya-labs"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Pooya Labs GitHub profile"
+            className="group flex min-h-10 shrink-0 items-center gap-2 rounded-xl px-2.5 text-xs text-slate-300 transition-colors hover:bg-white/10 hover:text-white"
+          >
+            <Github className="h-5 w-5" aria-hidden="true" />
+            <span className="hidden sm:inline">GitHub</span>
+            <ArrowUpRight className="hidden h-3.5 w-3.5 opacity-60 sm:block" aria-hidden="true" />
+          </a>
+          <a
+            href="https://pooya-labs.github.io/pooya-labs-platform/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Pooya Labs Platform"
+            className="group flex min-h-10 shrink-0 items-center gap-2 rounded-xl px-2.5 text-xs text-slate-300 transition-colors hover:bg-emerald-400/10 hover:text-emerald-100"
+          >
+            <img
+              src="https://pooya-labs.github.io/pooya-labs-platform/brand/pooya-monogram.webp"
+              alt=""
+              width={23}
+              height={23}
+              loading="lazy"
+              decoding="async"
+              className="h-6 w-6 rounded-md object-contain"
+            />
+            <span className="hidden sm:inline">Pooya Labs</span>
+            <ArrowUpRight className="hidden h-3.5 w-3.5 opacity-60 sm:block" aria-hidden="true" />
+          </a>
+        </div>
+      </footer>
 
       {/* داک مغناطیسی پایین */}
       <AdaptiveDock />
