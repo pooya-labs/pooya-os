@@ -343,7 +343,20 @@ export default function ProjectsApp() {
               aria-pressed={active}
               className={`min-w-0 rounded-xl border p-3 text-start transition-all ${active ? "border-cyan-300/60 bg-cyan-400/10 shadow-[0_0_24px_rgba(34,211,238,0.1)]" : "border-white/10 bg-slate-900/60 hover:bg-slate-800/80"}`}
             >
-              <span className="font-mono text-[10px] text-cyan-300">{project.index}</span>
+              <div className="flex items-center justify-between gap-2">
+                <span className="font-mono text-[10px] text-cyan-300">{project.index}</span>
+                {project.id === "pooya-labs-platform" && (
+                  <img
+                    src="https://pooya-labs.github.io/pooya-labs-platform/brand/pooya-monogram.webp"
+                    alt=""
+                    width={24}
+                    height={24}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-6 w-6 rounded-md object-contain"
+                  />
+                )}
+              </div>
               <span className="mt-1 block text-xs font-bold text-white">{project.title[lang]}</span>
               <span className="mt-1 block text-[10px] text-slate-500 truncate">{project.badge}</span>
             </button>
