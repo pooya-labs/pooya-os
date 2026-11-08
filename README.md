@@ -8,7 +8,7 @@ Pooya.OS is a browser-based engineering portfolio presented as a desktop workspa
 
 ## Explore the workspace
 - **Engineer profile:** product design, frontend engineering, and systems-thinking focus.
-- **Product case studies:** four projects with problem statements, technical approaches, practical things to try, and direct source/demo links.
+- **Project showcase:** nine bilingual project profiles, led by Pooya Labs Platform, with problem statements, engineering approaches, practical things to try, and direct source/demo links.
 - **Local CLI:** `help`, `whoami`, `stack`, `projects`, `status`, `xray`, and `hire`. Commands run in the browser; they do not execute shell commands.
 - **Architecture & tokens:** the design palette and runtime boundaries, with X-Ray labels for interface inspection.
 - **Frame monitor:** browser-side `requestAnimationFrame` sampling. FPS and frame time describe this tab, not server latency.
@@ -20,6 +20,11 @@ Pooya.OS is a browser-based engineering portfolio presented as a desktop workspa
 - State is client-side and resets with the browser session unless a feature explicitly says otherwise.
 
 ## Project ecosystem
+- **Pooya Labs Platform:** the owner's bilingual engineering portfolio, case studies, architecture diagrams, and novels library.
+- **ORBIT:** an observability and incident-operations workspace with a public synthetic-data demo.
+- **AetherFlow:** a distributed-systems and control-plane engineering project.
+- **GlobalCart:** a bilingual storefront and product-catalog demo; checkout and fulfillment are simulated.
+- **Salon Booking:** appointment booking and salon management, released as v1.0.0 with an Apps Script and Sheets backend.
 - **AuraPulse:** public read-only Binance tickers where reachable, plus an in-browser paper-trading simulator.
 - **NexusCanvas:** a local architecture graph editor with topology analysis and a Docker Compose starter export.
 - **LuminaGlass:** SVG-based optical controls, PNG export, browser-native Web Audio processing, and a local task board.
