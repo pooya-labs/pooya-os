@@ -202,7 +202,7 @@ const PROJECTS_DATA = [
   },
   {
     id: "aetherflow",
-    logo: "https://raw.githubusercontent.com/pooya-labs/aetherflow/main/public/favicon.svg",
+    logo: "https://raw.githubusercontent.com/pooya-labs/lumina-glass/main/public/project-marks/aetherflow.svg",
     index: "07",
     badge: "DISTRIBUTED SYSTEMS & CONTROL PLANE",
     title: { fa: "AetherFlow", en: "AetherFlow" },
