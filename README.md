@@ -43,7 +43,7 @@ The Projects workspace uses the official project marks from the same asset sourc
 | NexusCanvas | `pooya-labs/nexus-canvas/public/nexus-canvas-mark.svg` |
 | Lumina Glass | `pooya-labs/lumina-glass/public/lumina-mark.svg` |
 | Orbit | `pooya-labs/orbit/app/icon.svg` |
-| Aetherflow | `Lumina Glass project-marks/aetherflow.svg` |
+| Aetherflow | `pooya-labs/lumina-glass/public/project-marks/aetherflow.svg` |
 | GlobalCart | `pooya-labs/globalcart/app/icon.svg` |
 | Salon Booking | `pooya-labs/salon-booking/public/images/shayan-emblem.webp` |
 
