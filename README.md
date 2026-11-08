@@ -30,3 +30,43 @@ Pooya.OS is a browser-based engineering portfolio presented as a desktop workspa
 - **LuminaGlass:** SVG-based optical controls, PNG export, browser-native Web Audio processing, and a local task board.
 
 The interface distinguishes external public data from illustrative metrics and local-only behavior. It is a portfolio demonstration, not a hosted SaaS backend.
+
+## Project identity & logo assets
+
+The Projects workspace uses the official project marks from the same asset sources as the Lumina Glass ecosystem showcase. Each of the nine project entries has its own logo, shown in both the project selector and the selected-project detail header. Logos use contained sizing so the source artwork keeps its original proportions; transparent marks stay transparent, the Pooya Labs Platform monogram keeps its black tile, and light-background marks retain a neutral tile for contrast.
+
+| Project | Official logo asset |
+| --- | --- |
+| Pooya Labs Platform | `pooya-labs/pooya-labs-platform/apps/platform/public/brand/pooya-monogram.webp` |
+| Pooya.OS | `pooya-labs/pooya-os/public/brand/pooya-os.svg` |
+| AuraPulse | `pooya-labs/aurapulse/public/aurapulse-mark.svg` |
+| NexusCanvas | `pooya-labs/nexus-canvas/public/nexus-canvas-mark.svg` |
+| Lumina Glass | `pooya-labs/lumina-glass/public/lumina-mark.svg` |
+| Orbit | `pooya-labs/orbit/app/icon.svg` |
+| Aetherflow | `Lumina Glass project-marks/aetherflow.svg` |
+| GlobalCart | `pooya-labs/globalcart/app/icon.svg` |
+| Salon Booking | `pooya-labs/salon-booking/public/images/shayan-emblem.webp` |
+
+## نسخهٔ فارسی
+
+### معرفی
+
+Pooya.OS یک پورتفولیوی مهندسی تعاملی است که تجربهٔ یک دسکتاپ تحت وب را شبیه‌سازی می‌کند. این محیط شامل پنجره‌های قابل تعامل، داک تطبیقی، ترمینال محلی، بازرس معماری و مجموعهٔ کیس‌استادی‌های پروژه‌هاست.
+
+### نمایش پروژه‌ها و نشان‌ها
+
+هر ۹ پروژه در بخش Projects نشان رسمی خودش را دارد. نشان‌ها از همان منابع تصویری استفاده می‌کنند که در بخش اکوسیستم Lumina Glass به کار رفته‌اند و در فهرست پروژه‌ها و سربرگ جزئیات پروژه نمایش داده می‌شوند. نسبت تصویر اصلی نشان‌ها حفظ می‌شود و پس‌زمینهٔ هر نشان متناسب با شفاف یا روشن بودن فایل انتخاب شده است.
+
+### محدودهٔ اجرا
+
+این نسخه به‌صورت استاتیک روی GitHub Pages منتشر می‌شود. ترمینال فقط فرمان‌های محلی تعریف‌شده در مرورگر را اجرا می‌کند و دسترسی به Shell، API سمت سرور، پایگاه داده یا حساب کاربری ندارد. شاخص‌های FPS و زمان فریم نیز فقط وضعیت رندر همین زبانهٔ مرورگر را نشان می‌دهند.
+
+### توسعه و بررسی
+
+```bash
+npm install
+npm run typecheck
+npm run build
+```
+
+برای انتشار، خروجی استاتیک و مسیر پایهٔ `/pooya-os` باید با تنظیمات GitHub Pages سازگار بمانند.
