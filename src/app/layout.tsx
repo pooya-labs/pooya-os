@@ -6,7 +6,8 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, view
 export const metadata: Metadata = {
   title: "Pooya Goodarzi | Pooya.OS — Interactive Engineering Portfolio",
   description:
-    "Interactive engineering portfolio by Pooya Goodarzi, featuring responsive case studies, a browser-local desktop and design-system inspector.",
+    "Pooya.OS is an interactive engineering portfolio and spatial desktop by Pooya Goodarzi, connected to the Pooya Labs ecosystem.",
+  icons: { icon: "/pooya-os/brand/pooya-os.svg", shortcut: "/pooya-os/brand/pooya-os.svg" },
 };
 
 export default function RootLayout({
