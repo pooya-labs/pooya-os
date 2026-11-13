@@ -49,7 +49,7 @@ export default function AdaptiveDock() {
   return (
     <nav
       data-xray-label="AdaptiveDock :: Floating Spatial Bar"
-      className="fixed bottom-[calc(0.5rem+env(safe-area-inset-bottom))] inset-x-0 z-50 flex justify-center px-2 pointer-events-none"
+      className="fixed bottom-[calc(3.25rem+env(safe-area-inset-bottom))] inset-x-0 z-50 flex justify-center px-2 pointer-events-none"
     >
       <div className="pointer-events-auto max-w-full overflow-x-auto flex items-center gap-1.5 sm:gap-3 px-2 sm:px-3 py-2 rounded-2xl bg-slate-950/80 backdrop-blur-2xl border border-white/15 shadow-[0_15px_50px_rgba(0,0,0,0.75)]">
         {DOCK_ITEMS.map((item) => {
